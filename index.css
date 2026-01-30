@@ -20,19 +20,18 @@ body {
 main {
     width: 100%;
     max-width: 520px;
-    text-align: center;
-    padding: 24px;
+    padding: 20px 16px;
 }
+
 
 /* Títulos */
 main h1 {
     color: #8e3a8e;
-    font-size: 1.4rem;
-    margin-bottom: 16px;
     font-family: "Modak", system-ui;
-  font-weight: 40;
-  font-style: normal;
-  font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(28px, 8vw, 40px);
+    margin-bottom: 16px;
 }
 
 main h2 {
@@ -43,12 +42,14 @@ main h2 {
 
 /* Imagem central */
 main img {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
-    padding: 20px;
-    margin: 16px 0 24px 0;
+    padding: 12px;
+    margin: 16px auto 24px;
 }
 
 /* Formulário */
@@ -72,9 +73,9 @@ button {
     background-color: #8e3a8e;
     color: #ffffff;
     border: none;
-    padding: 12px;
+    padding: 14px;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -82,4 +83,14 @@ button {
 
 button:hover {
     background-color: #742f74;
+}
+
+@media (max-width: 480px) {
+    main h2 {
+        font-size: 0.9rem;
+    }
+
+    input[type="date"] {
+        font-size: 0.95rem;
+    }
 }
