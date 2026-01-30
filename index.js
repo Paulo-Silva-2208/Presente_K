@@ -1,7 +1,7 @@
 document.getElementById("senha-form").addEventListener("submit", function(event) {
     event.preventDefault(); // impede recarregar a página
 
-    const senhaCorreta = "2024-10-26"; // FORMATO DO INPUT DATE
+    const senhaCorreta = "2024-10-06"; // FORMATO DO INPUT DATE
     const senhaDigitada = document.getElementById("senha").value;
 
     if (senhaDigitada === senhaCorreta) {
@@ -10,3 +10,4 @@ document.getElementById("senha-form").addEventListener("submit", function(event)
         alert("Senha incorreta 💔 Tente novamente!");
     }
 });
+
