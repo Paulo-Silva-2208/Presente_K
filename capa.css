@@ -1,0 +1,85 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    background-color: #f6b3e6; /* rosa claro */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+main {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Títulos */
+main h1 {
+    color: #8e3a8e;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    font-family: "Modak", system-ui;
+  font-weight: 40;
+  font-style: normal;
+  font-size: 40px;
+}
+
+main h2 {
+    color: #a35aa3;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+/* Imagem central */
+main img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 16px 0 24px 0;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input de data */
+input[type="date"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Botão */
+button {
+    background-color: #8e3a8e;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #742f74;
+}

@@ -1,0 +1,87 @@
+.timeline {
+    background-color: #f6b3e6;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Cada evento */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.timeline-item-menor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+
+/* Moldura roxa */
+.foto-wrapper {
+    background-color: #7d2a7d;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+
+
+.foto-wrapper img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Texto */
+.texto {
+    color: #8e3a8e;
+    font-family: "Quicksand", system-ui;
+    font-weight: 400;
+    display: block;
+    margin: 16px 0;
+    max-width: 320px;
+    width: 100%;
+}
+
+.texto .data {
+    display: block;
+    margin: 16px 0 6px;
+    font-family: "Modak", system-ui;
+    font-size: larger;
+    max-width: 100%;
+}
+
+/* Linha vertical */
+.linha {
+    width: 2px;
+    height: 450px;
+    background-color: #7d2a7d;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #8e3a8e;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #742f74;
+}
